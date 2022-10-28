@@ -2,8 +2,8 @@
 # Given a list of N people and the above operation, find a way to identify the celebrity in O(N) time.
 from random import random
 
-partySize = 10
-celebNum = 5
+partySize = 100
+celebNum = 87
 
 def CreateParty():
     setParty = [Person(False) for i in range(partySize)]
@@ -41,7 +41,7 @@ for i in range(partySize-1):
     if(knows(N[currentPerson],i+1)):
         currentPerson = i+1
 
-print(currentPerson)
+print('The celebrity is person ' + str(currentPerson))
         
         
     
